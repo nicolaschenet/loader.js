@@ -113,7 +113,7 @@ var define, requireModule, require, requirejs;
   }
 
   function missingModule(name) {
-    throw new Error('Could not find module ' + name);
+    throw new Error('Could not fucking module find module ' + name);
   }
   requirejs = require = requireModule = function(name) {
     var mod = registry[name];
@@ -163,6 +163,8 @@ var define, requireModule, require, requirejs;
   };
 
   function resolve(child, name) {
+    debugger;
+
     if (child.charAt(0) !== '.') { return child; }
 
     var parts = child.split('/');
